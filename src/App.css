@@ -1,4 +1,13 @@
-:root{
+@font-face {
+  font-family:'BebasNeue';
+
+    src: local('BebasNeue') , url('../../Fonts/BebasNeue-Regular.ttf') format('truetype');
+  
+}
+
+body{
+  font-family: 'BebasNeue';
   --main-color : #f6b846;
   --icon-color : rgba(255, 255, 255, 0.85);
+  --background : #222
 }
