@@ -10,33 +10,32 @@ import { Link } from 'react-router-dom';
 export default function Sidebar() {
   return (
     <div className='sidebar'>
-      <Link>
-      
+      <Link to={'/'}>
             <div className='menuTitle'>
                 <Person3OutlinedIcon />
                 <span>ABOUT</span>
             </div>
       </Link>
-      <Link>
+      <Link to={'/Experience'}>
       
             <div className='menuTitle'>
                 <BusinessCenterOutlinedIcon />
                 <span>EXPERIENCE</span>
             </div>
       </Link>
-      <Link>
+      <Link to={'/Education'}>
       <div className='menuTitle'>
                 <SchoolOutlinedIcon />
                 <span>EDUCATION</span>
             </div>
       </Link>
-            <Link>
+            <Link to={'/Knowledge'}>
             <div className='menuTitle'>
                 <CodeOutlinedIcon />
                 <span>KNOWLEDGE</span>
             </div>
             </Link>
-            <Link>
+            <Link to={'/Portfolio'}>
             
             <div className='lastMenuTitle'>
                 <CasesOutlinedIcon />

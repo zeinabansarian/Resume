@@ -1,0 +1,16 @@
+.Profile{
+    display: inline-block;
+    width: 35vw;
+    left: 14vw;
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    background: var(--background);
+    text-align: center;
+    z-index: 10;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    top: 10vh;
+}

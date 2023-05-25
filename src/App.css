@@ -11,3 +11,6 @@ body{
   --icon-color : rgba(255, 255, 255, 0.85);
   --background : #222
 }
+a{
+  text-decoration: none;
+}
