@@ -1,0 +1,13 @@
+.Typewriter__wrapper{
+    display: inline-block!important;
+}
+
+.Typewriter__cursor{
+}
+
+.Typewriter span{
+    color: var(--main-color);
+    display: inline-block!important;
+    font-size: 18px;
+    font-weight: 100;
+}
