@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 import './TypedText.css'
 export default function TypedText() {
   return (
-    <div className="Typewriter">
+    <div className="TypeText">
       <Typewriter
         options={{
           strings: ["FRONT-END DEVELOPER", "WORDPRES DEVELOPER" , "FREELANCER"],

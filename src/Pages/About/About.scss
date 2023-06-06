@@ -1,0 +1,63 @@
+@import '../../mixins.scss';
+.About {
+    @include pageStyle();
+    .mySkilss{
+        display: inline-block;
+        margin: 80px 0 0 ;
+
+        img{
+            width: 30%;
+        }
+        h3{
+            color: var(--icon-color);
+            font-weight: 100;
+        }
+        
+    }
+    p{
+        @include paraPageStyle();
+    }
+    .aboutTitle{
+        position: relative;
+    }
+    .aboutTitle::after {
+        @include titleAfter();
+      }
+      h2{
+        @include titleH2();
+      }
+
+      h2:nth-child(2) {
+        right: 0;
+      }
+      section{
+        @include pageSection();
+
+        .aboutSec1 {
+            width: 50%;
+            text-align: right;
+            direction: rtl;
+            word-spacing: 5px;
+            p {
+                padding: 0;
+              }
+              span {
+                display: inline-block;
+                color: var(--icon-color);
+                padding-left: 10px;
+              }
+          }
+      }
+      .skills{
+        padding: 25px 5px 25px 15px;
+        .mySkilss{
+            p{
+                padding: 0px 0px;
+                text-align: left;
+                margin: 0;
+            }
+        }
+    }
+    
+}
+@include scrollBar();

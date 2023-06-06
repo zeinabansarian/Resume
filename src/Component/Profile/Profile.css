@@ -14,9 +14,9 @@
     -webkit-border-radius: 4px;
     top: 10vh;
 }
-h2{
+.Profile h2{
     POSITION: ABSOLUTE;
-    bottom: 0;
+    bottom: 8rem;
     text-align: center;
     left: 0;
     right: 0;

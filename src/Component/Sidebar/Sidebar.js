@@ -23,12 +23,6 @@ export default function Sidebar() {
                 <span>EXPERIENCE</span>
             </div>
       </Link>
-      <Link to={'/Education'}>
-      <div className='menuTitle'>
-                <SchoolOutlinedIcon />
-                <span>EDUCATION</span>
-            </div>
-      </Link>
             <Link to={'/Knowledge'}>
             <div className='menuTitle'>
                 <CodeOutlinedIcon />

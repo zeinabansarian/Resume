@@ -1,0 +1,95 @@
+.About {
+  position: absolute;
+  border-radius: 4px;
+  background-color: var(--background);
+  width: 36vw;
+  display: inline-block;
+  padding: 5px 15px;
+  top: 12vh;
+  right: 13vw;
+  overflow-y: auto;
+  height: 79vh;
+}
+.About .mySkilss {
+  display: inline-block;
+  margin: 80px 0 0;
+}
+.About .mySkilss img {
+  width: 30%;
+}
+.About .mySkilss h3 {
+  color: var(--icon-color);
+  font-weight: 100;
+}
+.About p {
+  display: inline-block;
+  padding-top: 70px;
+  text-align: right;
+  font-size: 16px;
+  word-spacing: 5px;
+  color: rgba(255, 255, 255, 0.43);
+}
+.About .aboutTitle {
+  position: relative;
+}
+.About .aboutTitle::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -65px;
+  height: 1px;
+  background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+}
+.About h2 {
+  position: absolute;
+  color: var(--icon-color);
+  font-weight: 100;
+}
+.About h2:nth-child(2) {
+  right: 0;
+}
+.About section {
+  direction: rtl;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  font-size: 16px;
+}
+.About section .aboutSec1 {
+  width: 50%;
+  text-align: right;
+  direction: rtl;
+  word-spacing: 5px;
+}
+.About section .aboutSec1 p {
+  padding: 0;
+}
+.About section .aboutSec1 span {
+  display: inline-block;
+  color: var(--icon-color);
+  padding-left: 10px;
+}
+.About .skills {
+  padding: 25px 5px 25px 15px;
+}
+.About .skills .mySkilss p {
+  padding: 0px 0px;
+  text-align: left;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #565656;
+  border-radius: 10px;
+  height: 5px;
+  width: 10px;
+}/*# sourceMappingURL=About.css.map */

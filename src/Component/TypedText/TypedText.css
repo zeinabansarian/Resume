@@ -11,3 +11,10 @@
     font-size: 18px;
     font-weight: 100;
 }
+.Typewriter{
+    position: absolute;
+    z-index: 5;
+    bottom: 8rem;
+    right: 0;
+    left: 0;
+}

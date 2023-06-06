@@ -1,0 +1,52 @@
+.ProfileButtons{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.ProfileButtons a{
+    display: inline-block;
+    padding: 3rem 4rem 4vh 4rem;
+    font-size: 18px;
+    color: var(--icon-color);
+}
+
+.ProfileButtons a:nth-child(2){
+    border-left: 1px solid radial-gradient(ellipse at top,#ddd 0%,rgba(255,255,255,0) 70%);
+}
+
+.ProfileButtons span{
+    display: inline-block ;
+    margin-right: 10px;
+}
+
+.ProfileButtons svg{
+    font-size: 18px;
+}
+
+.ProfileButtons::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    width: 100%;
+    top: 26px;
+    height: 2px;
+    background: radial-gradient(ellipse at top,#ddd 0%,rgba(255,255,255,0) 70%);
+}
+
+.ContactBtn{
+    position: relative;
+}
+.ContactBtn::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 60%;
+    top: 30px;
+    background: radial-gradient(ellipse at top,#ddd 0%,rgba(255,255,255,0) 70%);
+}

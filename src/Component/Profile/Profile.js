@@ -4,6 +4,8 @@ import slides from "../Profile/slides";
 import ImageLogo from "../imageLogo/imageLogo";
 import './Profile.css'
 import TextTyper from "../TypedText/TypedText";
+import ContactLogo from "../ContactLogo/ContactLogo";
+import ProfileButtons from "../ProfileButtons/ProfileButtons";
 export default function Profile() {
     const textToRender = 'FRONT-END DEVELOPER'
 
@@ -14,6 +16,8 @@ export default function Profile() {
             <ImageLogo />
             <h2>ZEINAB ANSARIAN</h2>
             <TextTyper text={textToRender} interval={10} Markup={"code"} />
+            <ContactLogo />
+            <ProfileButtons />
         </div>
     );
 }

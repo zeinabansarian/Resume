@@ -10,7 +10,7 @@ img{
     position: absolute;
     background-color: var(--background);
     left: -20px;
-    bottom: -65px;
+    bottom: 0;
     right: -20px;
     width: auto;
     height: 100px;

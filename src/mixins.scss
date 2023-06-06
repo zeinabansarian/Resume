@@ -1,0 +1,67 @@
+@mixin pageStyle{
+    position: absolute;
+    border-radius: 4px;
+    background-color: var(--background);
+    width: 36vw;
+    display: inline-block;
+    padding: 5px 15px;
+    top: 12vh;
+    right: 13vw;
+    overflow-y: auto;
+    height: 79vh;
+}
+
+@mixin paraPageStyle{
+    display: inline-block;
+    padding-top: 70px;
+    text-align: right;
+    font-size: 16px;
+    word-spacing: 5px;
+    color: rgb(255 255 255 / 43%);
+}
+
+@mixin titleAfter{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -65px;
+    height: 1px;
+    background: radial-gradient(
+      ellipse at left,
+      rgba(197, 202, 213, 0.15) 0%,
+      rgba(255, 255, 255, 0) 70%
+    );
+}
+@mixin titleH2{
+    position: absolute;
+    color: var(--icon-color);
+    font-weight: 100;
+}
+
+@mixin pageSection{
+    direction: rtl;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    font-size: 16px;
+}
+
+@mixin scrollBar{
+    ::-webkit-scrollbar {
+        width: 4px;
+        
+      }
+    
+      ::-webkit-scrollbar-track {
+        border-radius: 10px;
+      }
+    
+      ::-webkit-scrollbar-thumb {
+        background: #565656;
+        border-radius: 10px;
+        height: 5px;
+        width: 10px;
+      }
+    
+}

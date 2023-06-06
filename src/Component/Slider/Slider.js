@@ -1,6 +1,7 @@
 import React from "react";
 import './Slider.css'
 import { Swiper, SwiperSlide } from "swiper/react";
+import slides from "../Profile/slides";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/autoplay"
