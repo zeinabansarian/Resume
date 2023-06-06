@@ -1,8 +1,7 @@
 import React from 'react'
 import './Sidebar.css'
 import Person3OutlinedIcon from '@mui/icons-material/Person3Outlined';
-import BusinessCenterOutlinedIcon from '@mui/icons-material/BusinessCenterOutlined';
-import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
+import EventNoteIcon from '@mui/icons-material/EventNote';
 import CodeOutlinedIcon from '@mui/icons-material/CodeOutlined';
 import CasesOutlinedIcon from '@mui/icons-material/CasesOutlined';
 
@@ -19,7 +18,7 @@ export default function Sidebar() {
       <Link to={'/Experience'}>
       
             <div className='menuTitle'>
-                <BusinessCenterOutlinedIcon />
+                <EventNoteIcon />
                 <span>EXPERIENCE</span>
             </div>
       </Link>

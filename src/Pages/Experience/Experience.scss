@@ -1,5 +1,61 @@
-@import '../../mixins.scss'
+@import "../../mixins.scss";
+.experience {
+  @include pageStyle();
+  .experienceTitle {
+    position: relative;
+  }
 
-.Experience{
-    
+  .experienceTitle::after {
+    @include titleAfter();
+  }
+  h2 {
+    @include titleH2;
+  }
+  h3 {
+    color: var(--icon-color);
+  }
+  h4 {
+    color: rgb(255 255 255 / 43%);
+  }
+  h2:nth-child(2) {
+    right: 0;
+  }
+  .workBox {
+    position: relative;
+    top: 5rem;
+    direction: rtl;
+    margin-bottom: 2rem;
+
+    .workIcon {
+      font-size: 40px;
+      border: 2px var(--main-color) solid;
+      border-radius: 50%;
+      padding: 10px;
+      color: var(--main-color);
+    }
+    .workTitle {
+      display: inline-block;
+      margin-right: 25px;
+    }
+    .workDetail {
+        p{
+            @include paraPageStyle();
+            padding: 0;
+        }
+    }
+    .workDate {
+      span {
+        color: var(--main-color);
+        border: 1px var(--main-color) solid;
+        display: inline-block;
+        padding: 3px;
+        font-size: 12px;
+      }
+    }
+  }
+  .workBox::after{
+    @include titleAfter();
+    bottom: -10px;
+    background: radial-gradient(ellipse at right, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+  }
 }
