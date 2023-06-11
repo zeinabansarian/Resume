@@ -4,9 +4,9 @@
   background-color: var(--background);
   width: 36vw;
   display: inline-block;
-  padding: 5px 15px;
+  padding: 5px 20px;
   top: 12vh;
-  right: 13vw;
+  right: 12vw;
   overflow-y: auto;
   height: 79vh;
 }

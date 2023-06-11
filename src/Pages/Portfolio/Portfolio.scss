@@ -1,0 +1,123 @@
+@import "../../mixins.scss";
+
+.Portfolio {
+  @include pageStyle();
+  .portfolioTitle {
+    position: relative;
+    h2 {
+      @include titleH2();
+    }
+    h2:nth-child(2) {
+      right: 0;
+    }
+  }
+  .portfolioTitle::after {
+    @include titleAfter();
+  }
+  .portfolioBoxes {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 5rem;
+  }
+  .portfolioBox {
+    width: 50%;
+    transition: all .6s ease 0s;
+
+
+    a {
+        position: relative;
+      text-align: center;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      color: var(--icon-color);
+      font-size: 20px;
+      margin-top: 15px;
+    }
+    .portfolioImg {
+      background-color: #575757;
+      margin: 0 5px;
+      img {
+        width: 90%;
+        padding: 13px 0;
+        transition: all .6s ease 0s;
+
+      }
+    }
+    p {
+      @include paraPageStyle();
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      font-size: 17px;
+    }
+    .info {
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      opacity: 0;
+      text-align: center;
+      transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -webkit-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+    }
+    .info::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: -moz-linear-gradient(
+          -45deg,
+          rgba(46, 202, 127, 0.15) 0%,
+          rgba(46, 202, 127, 0.01) 100%
+        );
+        background: -webkit-linear-gradient(
+          -45deg,
+          rgba(46, 202, 127, 0.15) 0%,
+          rgba(46, 202, 127, 0.01) 100%
+        );
+        background: linear-gradient(
+          135deg,
+          rgba(46, 202, 127, 0.15) 0%,
+          rgba(46, 202, 127, 0.01) 100%
+        );
+        transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        background: linear-gradient(
+          135deg,
+          rgba(246, 184, 70, 0.4) 0%,
+          rgba(246, 184, 70, 0.01) 100%
+        );
+      }
+    .linkIcon{
+      position: relative;
+      right: 0;
+      left: 0;
+      top: 43%;
+      bottom: 0;
+      font-size: 3rem;
+      color: #222222;
+    }
+    
+  }
+
+  .portfolioBox:hover .info{
+    opacity: 1;
+  }
+  .portfolioBox:hover img{
+    transform: scale(1.05);
+    transition: all .6s ease 0s;
+    filter: blur(1px);
+  }
+}

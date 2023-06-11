@@ -1,0 +1,168 @@
+.skills {
+  position: absolute;
+  border-radius: 4px;
+  background-color: var(--background);
+  width: 36vw;
+  display: inline-block;
+  padding: 5px 20px;
+  top: 12vh;
+  right: 12vw;
+  overflow-y: auto;
+  height: 79vh;
+}
+.skills .skillsTitle {
+  position: relative;
+}
+.skills .skillsTitle h2 {
+  position: absolute;
+  color: var(--icon-color);
+  font-weight: 100;
+}
+.skills .skillsTitle h2:nth-child(2) {
+  right: 0;
+}
+.skills .skillsTitle::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -65px;
+  height: 1px;
+  background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+}
+.skills .skilItems {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: 18vh;
+  direction: rtl;
+}
+.skills .skilItems .skilItem {
+  margin: 15px 0px;
+  width: 33%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.skills .skilItems .skilItem h3 {
+  width: 100%;
+  text-align: center;
+  font-weight: 100;
+  color: var(--icon-color);
+}
+.skills .skillsTit {
+  top: 19vh;
+  direction: rtl;
+  position: relative;
+}
+.skills .skillsTit h3 {
+  right: 1vw;
+  position: absolute;
+  color: var(--icon-color);
+  font-weight: 100;
+  position: relative;
+  display: inline-block;
+}
+.skills .skillsTit .skillIcon {
+  position: relative;
+  top: 1rem;
+  color: var(--main-color);
+  border: 3px var(--main-color) solid;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 25px;
+}
+.skills .skillsTit::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -65px;
+  height: 1px;
+  background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+  bottom: -5px;
+  background: radial-gradient(ellipse at right, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+}
+.skills .skillsTit:nth-child(2) {
+  top: 12vh;
+}
+.skills .skillCheck {
+  position: relative;
+  top: 8.5rem;
+  margin-bottom: 2rem;
+}
+.skills .skillCheck .checkItem {
+  color: var(--main-color);
+  direction: rtl;
+}
+.skills .skillCheck .checkItem p {
+  display: inline-block;
+  display: inline-block;
+  padding-top: 70px;
+  text-align: right;
+  font-size: 16px;
+  word-spacing: 5px;
+  color: rgba(255, 255, 255, 0.43);
+  line-height: 27px;
+  position: relative;
+  top: -3px;
+  right: 10px;
+  padding: 0;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.69);
+  margin: 10px 0;
+}
+.skills .graphicSkill .artSkill {
+  position: relative;
+  bottom: -8rem;
+  padding: 6px 10px 10px 10px;
+}
+.skills .graphicSkill .artSkill P {
+  display: inline-block;
+  padding-top: 70px;
+  text-align: right;
+  font-size: 16px;
+  word-spacing: 5px;
+  color: rgba(255, 255, 255, 0.43);
+  line-height: 27px;
+  font-size: 19px;
+  padding: 0;
+}
+.skills .graphicSkill .artSkill:nth-child(4) {
+  padding-bottom: 3rem !important;
+}
+.skills .languages .degree {
+  position: relative;
+  top: 9rem;
+  padding-bottom: 2rem;
+}
+.skills .languages .degree P {
+  display: inline-block;
+  padding-top: 70px;
+  text-align: right;
+  font-size: 16px;
+  word-spacing: 5px;
+  color: rgba(255, 255, 255, 0.43);
+  line-height: 27px;
+  font-size: 20px;
+  padding: 0;
+  text-align: left;
+  margin-right: 15px;
+}
+.skills .languages .degree span {
+  background-color: #3e4148;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  margin: -1.5px 5px;
+}
+.skills .languages .degree span:nth-child(1),
+.skills .languages .degree span:nth-child(2),
+.skills .languages .degree span:nth-child(3),
+.skills .languages .degree span:nth-child(4),
+.skills .languages .degree span:nth-child(5),
+.skills .languages .degree span:nth-child(6) {
+  background-color: var(--main-color);
+}/*# sourceMappingURL=Skills.css.map */

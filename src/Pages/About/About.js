@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css";
+import SchoolIcon from "@mui/icons-material/School";
 export default function About() {
   return (
     <div className="About">
@@ -28,10 +29,24 @@ export default function About() {
           <p> تهران </p>
         </div>
       </section>
-      <div className="skills">
+
+      <div className="aboutTitle">
+        <h2>QUALIFICATION</h2>
+        <h2>تحصیلات </h2>
+      </div>
+      <div className="qualibox">
+        <SchoolIcon className="qualiIcon" />
+        <div className="qualiDetail">
+          <span>1397 - 1401</span>
+          <h3>دانشگاه آزاد واحد یادگار امام </h3>
+          <h4>مهندسی کامپیوتر گرایش نرم افزار</h4>
+        </div>
+      </div>
+
+      <div className="knowledge">
         <div className="aboutTitle">
-          <h2>MY SKILLS</h2>
-          <h2>زمینه مهارت های من</h2>
+          <h2>KNOWLEDGE</h2>
+          <h2>دانسته ها</h2>
         </div>
 
         <div className="mySkilss">
@@ -49,6 +64,7 @@ export default function About() {
           </p>
         </div>
       </div>
+
     </div>
   );
 }

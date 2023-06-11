@@ -48,7 +48,7 @@
               }
           }
       }
-      .skills{
+      .knowledge{
         padding: 25px 5px 25px 15px;
         .mySkilss{
             p{
@@ -56,6 +56,37 @@
                 text-align: left;
                 margin: 0;
             }
+        }
+    }
+    .qualibox{
+        position: relative;
+        direction: rtl;
+        top: 6rem;
+        margin-bottom: 8rem;
+        .qualiDetail{
+            display: inline-block;
+    margin-right: 20px;
+        }
+        h3 , h4{
+            color: var(--icon-color);
+            margin: 0;
+            margin: 10px 0;
+        }
+        h4{
+            color: rgb(255 255 255 / 43%);
+        }
+
+        span{
+            @include dateSpan();
+        }
+        .qualiIcon{
+            font-size: 35px;
+            border: 2px var(--main-color) solid;
+            border-radius: 50%;
+            padding: 9px;
+            color: var(--main-color);
+            position: relative;
+            top: -25px;
         }
     }
     

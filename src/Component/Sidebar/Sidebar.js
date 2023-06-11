@@ -1,8 +1,8 @@
 import React from 'react'
 import './Sidebar.css'
+import ImportantDevicesIcon from '@mui/icons-material/ImportantDevices';
 import Person3OutlinedIcon from '@mui/icons-material/Person3Outlined';
 import EventNoteIcon from '@mui/icons-material/EventNote';
-import CodeOutlinedIcon from '@mui/icons-material/CodeOutlined';
 import CasesOutlinedIcon from '@mui/icons-material/CasesOutlined';
 
 import { Link } from 'react-router-dom';
@@ -22,10 +22,10 @@ export default function Sidebar() {
                 <span>EXPERIENCE</span>
             </div>
       </Link>
-            <Link to={'/Knowledge'}>
+            <Link to={'/Skills'}>
             <div className='menuTitle'>
-                <CodeOutlinedIcon />
-                <span>KNOWLEDGE</span>
+                <ImportantDevicesIcon />
+                <span>Skills</span>
             </div>
             </Link>
             <Link to={'/Portfolio'}>

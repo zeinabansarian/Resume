@@ -4,9 +4,9 @@
   background-color: var(--background);
   width: 36vw;
   display: inline-block;
-  padding: 5px 15px;
+  padding: 5px 20px;
   top: 12vh;
-  right: 13vw;
+  right: 12vw;
   overflow-y: auto;
   height: 79vh;
 }
@@ -28,6 +28,7 @@
   font-size: 16px;
   word-spacing: 5px;
   color: rgba(255, 255, 255, 0.43);
+  line-height: 27px;
 }
 .About .aboutTitle {
   position: relative;
@@ -70,13 +71,47 @@
   color: var(--icon-color);
   padding-left: 10px;
 }
-.About .skills {
+.About .knowledge {
   padding: 25px 5px 25px 15px;
 }
-.About .skills .mySkilss p {
+.About .knowledge .mySkilss p {
   padding: 0px 0px;
   text-align: left;
   margin: 0;
+}
+.About .qualibox {
+  position: relative;
+  direction: rtl;
+  top: 6rem;
+  margin-bottom: 8rem;
+}
+.About .qualibox .qualiDetail {
+  display: inline-block;
+  margin-right: 20px;
+}
+.About .qualibox h3, .About .qualibox h4 {
+  color: var(--icon-color);
+  margin: 0;
+  margin: 10px 0;
+}
+.About .qualibox h4 {
+  color: rgba(255, 255, 255, 0.43);
+}
+.About .qualibox span {
+  color: var(--main-color);
+  border: 1px var(--main-color) solid;
+  display: inline-block;
+  padding: 3px;
+  font-size: 12px;
+}
+.About .qualibox .qualiIcon {
+  font-size: 35px;
+  border: 2px var(--main-color) solid;
+  border-radius: 50%;
+  padding: 9px;
+  color: var(--main-color);
+  position: relative;
+  top: -25px;
 }
 
 ::-webkit-scrollbar {
