@@ -2,11 +2,11 @@
   position: absolute;
   border-radius: 4px;
   background-color: var(--background);
-  width: 36vw;
+  width: 39vw;
   display: inline-block;
   padding: 5px 20px;
   top: 12vh;
-  right: 12vw;
+  right: 9vw;
   overflow-y: auto;
   height: 79vh;
 }

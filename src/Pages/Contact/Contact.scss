@@ -1,0 +1,55 @@
+@import "../../mixins.scss";
+
+.Contact {
+  @include pageStyle();
+  .ContactTitle {
+    position: relative;
+  }
+  .ContactTitle::after {
+    @include titleAfter();
+  }
+  h2 {
+    @include titleH2();
+  }
+
+  h2:nth-child(2) {
+    right: 0;
+  }
+  .contactBox{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 6rem;
+    direction: rtl;
+    .contactDetail{
+        width: 48%;
+        p{
+            @include paraPageStyle();
+            padding: 0;
+            display: inline-block;
+            font-size: 18px;
+        }
+        span{
+            display: inline-block;
+            font-size: 18px ;
+            margin-left: 5px;
+            color: rgb(255 255 255 / 68%);
+
+        }
+        .contactIcon{
+            display: inline-block;
+            margin-bottom: -5px;
+            margin-left: 5px;
+            color: var(--main-color);
+        }
+    }
+  }
+  .contactDetail:nth-child(odd){
+    margin-left: 5px;
+    width: 51%;
+  }
+  .widthHundred{
+    width: 100%!important;
+  }
+
+}

@@ -1,0 +1,73 @@
+.Contact {
+  position: absolute;
+  border-radius: 4px;
+  background-color: var(--background);
+  width: 39vw;
+  display: inline-block;
+  padding: 5px 20px;
+  top: 12vh;
+  right: 9vw;
+  overflow-y: auto;
+  height: 79vh;
+}
+.Contact .ContactTitle {
+  position: relative;
+}
+.Contact .ContactTitle::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -65px;
+  height: 1px;
+  background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+}
+.Contact h2 {
+  position: absolute;
+  color: var(--icon-color);
+  font-weight: 100;
+}
+.Contact h2:nth-child(2) {
+  right: 0;
+}
+.Contact .contactBox {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: 6rem;
+  direction: rtl;
+}
+.Contact .contactBox .contactDetail {
+  width: 48%;
+}
+.Contact .contactBox .contactDetail p {
+  display: inline-block;
+  padding-top: 70px;
+  text-align: right;
+  font-size: 16px;
+  word-spacing: 5px;
+  color: rgba(255, 255, 255, 0.43);
+  line-height: 27px;
+  padding: 0;
+  display: inline-block;
+  font-size: 18px;
+}
+.Contact .contactBox .contactDetail span {
+  display: inline-block;
+  font-size: 18px;
+  margin-left: 5px;
+  color: rgba(255, 255, 255, 0.68);
+}
+.Contact .contactBox .contactDetail .contactIcon {
+  display: inline-block;
+  margin-bottom: -5px;
+  margin-left: 5px;
+  color: var(--main-color);
+}
+.Contact .contactDetail:nth-child(odd) {
+  margin-left: 5px;
+  width: 51%;
+}
+.Contact .widthHundred {
+  width: 100% !important;
+}/*# sourceMappingURL=Contact.css.map */
