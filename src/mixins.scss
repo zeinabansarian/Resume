@@ -1,14 +1,15 @@
 @mixin pageStyle{
-    position: absolute;
-    border-radius: 4px;
-    background-color: var(--background);
-    width: 39vw;
-    display: inline-block;
-    padding: 5px 20px;
-    top: 12vh;
-    right: 9vw;
-    overflow-y: auto;
-    height: 79vh;
+  position: relative;
+  border-radius: 4px;
+  background-color: var(--background);
+  width: 100%;
+  display: inline-block;
+  padding: 20px 20px;
+  top: 12vh;
+  overflow-y: auto;
+  height: 79vh;
+  -webkit-transition: visibility 1s linear,opacity 0s linear;
+    -o-transition: visibility 1s linear,opacity 0s linear;
 }
 
 @mixin paraPageStyle{
@@ -26,7 +27,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -65px;
+    bottom: -50px;
     height: 1px;
     background: radial-gradient(
       ellipse at left,
@@ -38,6 +39,8 @@
     position: absolute;
     color: var(--icon-color);
     font-weight: 100;
+    font-size: 26px;
+
 }
 
 @mixin pageSection{

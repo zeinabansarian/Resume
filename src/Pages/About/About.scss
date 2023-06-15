@@ -11,11 +11,16 @@
         h3{
             color: var(--icon-color);
             font-weight: 100;
+            font-size: 20px;
+            margin-top: 1vh;
         }
         
     }
     p{
         @include paraPageStyle();
+        direction: rtl;
+        color: rgb(255 255 255 / 62%);
+        text-align: justify;
     }
     .aboutTitle{
         position: relative;
@@ -67,6 +72,9 @@
             display: inline-block;
     margin-right: 20px;
         }
+        h3{
+            font-size: 20px;
+        }
         h3 , h4{
             color: var(--icon-color);
             margin: 0;
@@ -74,13 +82,14 @@
         }
         h4{
             color: rgb(255 255 255 / 43%);
+            font-size: 18px
         }
 
         span{
             @include dateSpan();
         }
         .qualiIcon{
-            font-size: 35px;
+            font-size: 45px;
             border: 2px var(--main-color) solid;
             border-radius: 50%;
             padding: 9px;

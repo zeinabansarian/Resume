@@ -21,7 +21,7 @@ export default function Contact() {
           <p>تهران ....</p>
         </div>
         <div className="contactDetail">
-          <CallIcon className="contactIcon"/>
+          <CallIcon className="contactIcon reverseIcon"/>
           <span>شماره تلفن : </span>
           <p>09195292765</p>
         </div>

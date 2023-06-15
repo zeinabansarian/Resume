@@ -15,8 +15,6 @@ export default function Slider({slides}) {
                 autoplay={{ delay: 3000 }}
                 spaceBetween={2}
                 slidesPerView={1}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
             >
 
                 {slides.map((slide)=>(

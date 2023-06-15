@@ -22,13 +22,15 @@
     direction: rtl;
     .skilItem {
       margin: 15px 0px;
-      
+
       width: 33%;
       position: relative;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       h3 {
+        font-size: 20px;
+        margin-top: 2vh;
         width: 100%;
         text-align: center;
         font-weight: 100;
@@ -36,7 +38,7 @@
       }
     }
   }
- 
+
   .skillsTit {
     top: 19vh;
     direction: rtl;
@@ -46,17 +48,15 @@
       @include titleH2();
       position: relative;
       display: inline-block;
+      font-size: 23px;
     }
-    .skillIcon{
-        position: relative;
-        top: 1rem;
-        color: var(--main-color);
-        border: 3px var(--main-color) solid;
-        border-radius: 50%;
-        padding: 5px;
-        font-size: 25px;
+    .skillIcon {
+      color: var(--main-color);
+      border: 3px var(--main-color) solid;
+      border-radius: 50%;
+      padding: 5px;
+      font-size: 36px;
     }
-    
   }
   .skillsTit::after {
     @include titleAfter();
@@ -67,73 +67,72 @@
       rgba(255, 255, 255, 0) 70%
     );
   }
-  .skillsTit:nth-child(2){
+  .skillsTit:nth-child(2) {
     top: 12vh;
   }
-  .skillCheck{
+  .skillCheck {
     position: relative;
     top: 8.5rem;
     margin-bottom: 2rem;
-    .checkItem{
+    .checkItem {
       color: var(--main-color);
       direction: rtl;
-      p{
+      p {
         display: inline-block;
         @include paraPageStyle();
         position: relative;
         top: -3px;
         right: 10px;
         padding: 0;
-        font-size: 20px;
+        font-size: 18px;
         color: rgb(255 255 255 / 69%);
         margin: 10px 0;
       }
     }
   }
-  .graphicSkill{
-    .artSkill{
-      position: relative;
-      bottom: -8rem;
-      padding: 6px 10px 10px 10px;
-      P{
-        @include paraPageStyle();
-        font-size: 19px;
-        padding: 0;
-      }
-    }
-    .artSkill:nth-child(4){
-      padding-bottom: 3rem!important;
+}
+.graphicSkill {
+  .artSkill {
+    position: relative;
+    bottom: -8rem;
+    padding: 6px 10px 10px 10px;
+    P {
+      @include paraPageStyle();
+      font-size: 19px;
+      padding: 0;
     }
   }
-  .languages{
-    .degree{
-      position: relative;
-      top: 9rem;
-      padding-bottom: 2rem;
-      P{
-        @include paraPageStyle();
-        font-size: 20px;
-        padding: 0;
-        text-align: left;
-        margin-right: 15px;
-      }
-      span{
-        background-color: #3e4148;
-        border-radius: 50%;
-        width: 1rem;
-        height: 1rem;
-        display: inline-block;
-        margin: -1.5px 5px;
-      }
-      span:nth-child(1),
-      span:nth-child(2),
-      span:nth-child(3),
-      span:nth-child(4),
-      span:nth-child(5),
-      span:nth-child(6){
-        background-color: var(--main-color);
-      }
+  .artSkill:nth-child(4) {
+    padding-bottom: 3rem !important;
+  }
+}
+.languages {
+  .degree {
+    position: relative;
+    top: 9rem;
+    padding-bottom: 2rem;
+    P {
+      @include paraPageStyle();
+      font-size: 20px;
+      padding: 0;
+      text-align: left;
+      margin-right: 15px;
+    }
+    span {
+      background-color: #3e4148;
+      border-radius: 50%;
+      width: 1rem;
+      height: 1rem;
+      display: inline-block;
+      margin: -1.5px 5px;
+    }
+    span:nth-child(1),
+    span:nth-child(2),
+    span:nth-child(3),
+    span:nth-child(4),
+    span:nth-child(5),
+    span:nth-child(6) {
+      background-color: var(--main-color);
     }
   }
-
 }

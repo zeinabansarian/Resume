@@ -1,12 +1,11 @@
 .Portfolio {
-  position: absolute;
+  position: relative;
   border-radius: 4px;
   background-color: var(--background);
-  width: 39vw;
+  width: 100%;
   display: inline-block;
-  padding: 5px 20px;
+  padding: 20px 20px;
   top: 12vh;
-  right: 9vw;
   overflow-y: auto;
   height: 79vh;
 }
@@ -17,6 +16,7 @@
   position: absolute;
   color: var(--icon-color);
   font-weight: 100;
+  font-size: 26px;
 }
 .Portfolio .portfolioTitle h2:nth-child(2) {
   right: 0;
@@ -26,7 +26,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -65px;
+  bottom: -50px;
   height: 1px;
   background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
 }

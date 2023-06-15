@@ -1,14 +1,15 @@
 .About {
-  position: absolute;
+  position: relative;
   border-radius: 4px;
   background-color: var(--background);
-  width: 39vw;
+  width: 100%;
   display: inline-block;
-  padding: 5px 20px;
+  padding: 20px 20px;
   top: 12vh;
-  right: 9vw;
   overflow-y: auto;
   height: 79vh;
+  -webkit-transition: visibility 1s linear, opacity 0s linear;
+  -o-transition: visibility 1s linear, opacity 0s linear;
 }
 .About .mySkilss {
   display: inline-block;
@@ -20,6 +21,8 @@
 .About .mySkilss h3 {
   color: var(--icon-color);
   font-weight: 100;
+  font-size: 20px;
+  margin-top: 1vh;
 }
 .About p {
   display: inline-block;
@@ -29,6 +32,9 @@
   word-spacing: 5px;
   color: rgba(255, 255, 255, 0.43);
   line-height: 27px;
+  direction: rtl;
+  color: rgba(255, 255, 255, 0.62);
+  text-align: justify;
 }
 .About .aboutTitle {
   position: relative;
@@ -38,7 +44,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -65px;
+  bottom: -50px;
   height: 1px;
   background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
 }
@@ -46,6 +52,7 @@
   position: absolute;
   color: var(--icon-color);
   font-weight: 100;
+  font-size: 26px;
 }
 .About h2:nth-child(2) {
   right: 0;
@@ -89,6 +96,9 @@
   display: inline-block;
   margin-right: 20px;
 }
+.About .qualibox h3 {
+  font-size: 20px;
+}
 .About .qualibox h3, .About .qualibox h4 {
   color: var(--icon-color);
   margin: 0;
@@ -96,6 +106,7 @@
 }
 .About .qualibox h4 {
   color: rgba(255, 255, 255, 0.43);
+  font-size: 18px;
 }
 .About .qualibox span {
   color: var(--main-color);
@@ -105,7 +116,7 @@
   font-size: 12px;
 }
 .About .qualibox .qualiIcon {
-  font-size: 35px;
+  font-size: 45px;
   border: 2px var(--main-color) solid;
   border-radius: 50%;
   padding: 9px;

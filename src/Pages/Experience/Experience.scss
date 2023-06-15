@@ -13,8 +13,11 @@
   }
   h3 {
     color: var(--icon-color);
+    font-size: 20px;
   }
   h4 {
+
+    font-size: 18px;
     color: rgb(255 255 255 / 43%);
   }
   h2:nth-child(2) {
@@ -27,7 +30,8 @@
     margin-bottom: 2rem;
 
     .workIcon {
-      font-size: 40px;
+      margin-top: -6vh;
+      font-size: 45px;
       border: 2px var(--main-color) solid;
       border-radius: 50%;
       padding: 10px;
@@ -44,6 +48,7 @@
         }
     }
     .workDate {
+      margin-bottom: 2vh;
       span {
         @include dateSpan();
       }

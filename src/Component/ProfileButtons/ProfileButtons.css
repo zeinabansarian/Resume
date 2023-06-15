@@ -1,13 +1,13 @@
 .ProfileButtons{
     position: absolute;
-    bottom: 0;
+    bottom: -0.5rem;
     right: 0;
     left: 0;
 }
 
 .ProfileButtons a{
     display: inline-block;
-    padding: 3rem 4rem 4vh 4rem;
+    padding:  3rem 3rem 4vh 3rem;
     font-size: 18px;
     color: var(--icon-color);
 }
