@@ -8,6 +8,8 @@
   top: 12vh;
   overflow-y: auto;
   height: 79vh;
+  -webkit-transition: visibility 1s linear, opacity 0s linear;
+  -o-transition: visibility 1s linear, opacity 0s linear;
 }
 .experience .experienceTitle {
   position: relative;

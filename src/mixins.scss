@@ -10,6 +10,12 @@
   height: 79vh;
   -webkit-transition: visibility 1s linear,opacity 0s linear;
     -o-transition: visibility 1s linear,opacity 0s linear;
+    @media screen and (max-width:576px) {
+      width: 100%;
+      top: 2vh;
+      height: auto;
+    margin-bottom: 3vh;
+  }
 }
 
 @mixin paraPageStyle{

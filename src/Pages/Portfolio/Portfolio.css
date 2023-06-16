@@ -8,6 +8,16 @@
   top: 12vh;
   overflow-y: auto;
   height: 79vh;
+  -webkit-transition: visibility 1s linear, opacity 0s linear;
+  -o-transition: visibility 1s linear, opacity 0s linear;
+}
+@media screen and (max-width: 576px) {
+  .Portfolio {
+    width: 100%;
+    top: 2vh;
+    height: auto;
+    margin-bottom: 3vh;
+  }
 }
 .Portfolio .portfolioTitle {
   position: relative;
@@ -118,4 +128,16 @@
   transform: scale(1.05);
   transition: all 0.6s ease 0s;
   filter: blur(1px);
+}
+
+@media screen and (max-width: 576px) {
+  .portfolioBox {
+    width: 100% !important;
+  }
+  .portfolioBox a {
+    font-size: 24px !important;
+  }
+  .portfolioBox p {
+    font-size: 18px !important;
+  }
 }/*# sourceMappingURL=Portfolio.css.map */

@@ -15,6 +15,14 @@
   -webkit-transition: visibility 1s linear, opacity 0s linear;
   -o-transition: visibility 1s linear, opacity 0s linear;
 }
+@media screen and (max-width: 576px) {
+  .Contact {
+    width: 100%;
+    top: 2vh;
+    height: auto;
+    margin-bottom: 3vh;
+  }
+}
 .Contact .ContactTitle {
   position: relative;
 }
@@ -76,4 +84,18 @@
 }
 .Contact .widthHundred {
   width: 100% !important;
+}
+
+@media screen and (max-width: 576px) {
+  .contactDetail {
+    width: 100% !important;
+    margin: 10px 0;
+  }
+  .contactDetail p {
+    display: inline-block !important;
+    font-size: 20px !important;
+  }
+  .contactDetail span {
+    font-size: 22px !important;
+  }
 }/*# sourceMappingURL=Contact.css.map */

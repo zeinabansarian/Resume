@@ -55,3 +55,17 @@
   }
 
 }
+@media screen and (max-width: 576px){
+  .contactDetail{
+    width: 100%!important;
+    margin: 10px 0;
+    p{
+      display: inline-block!important;
+      font-size: 20px!important;
+    }
+    span{
+      font-size: 22px!important;
+
+    }
+  }
+}

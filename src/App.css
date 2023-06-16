@@ -1,7 +1,7 @@
 @font-face {
   font-family:'BebasNeue';
 
-    src: local('BebasNeue') , url('../../Fonts/BebasNeue-Regular.ttf') format('truetype');
+    src: local('BebasNeue') , url('./Fonts/BebasNeue-Regular.ttf') format('truetype');
   
 }
 
@@ -10,8 +10,19 @@ body{
 
   --main-color : #f6b846;
   --icon-color : rgba(255, 255, 255, 0.85);
-  --background : #222
+  --background : #222;
+  overflow: auto;
+  
 }
 a{
   text-decoration: none;
+}
+
+.resPad{
+  padding: 0!important;
+}
+@media screen and (max-width: 576px) {
+  .app{
+    overflow: auto;
+  }
 }

@@ -11,6 +11,14 @@
   -webkit-transition: visibility 1s linear, opacity 0s linear;
   -o-transition: visibility 1s linear, opacity 0s linear;
 }
+@media screen and (max-width: 576px) {
+  .About {
+    width: 100%;
+    top: 2vh;
+    height: auto;
+    margin-bottom: 3vh;
+  }
+}
 .About .mySkilss {
   display: inline-block;
   margin: 80px 0 0;
@@ -99,7 +107,8 @@
 .About .qualibox h3 {
   font-size: 20px;
 }
-.About .qualibox h3, .About .qualibox h4 {
+.About .qualibox h3,
+.About .qualibox h4 {
   color: var(--icon-color);
   margin: 0;
   margin: 10px 0;
@@ -123,6 +132,36 @@
   color: var(--main-color);
   position: relative;
   top: -25px;
+}
+
+@media screen and (max-width: 576px) {
+  .mySkilss {
+    position: relative;
+    text-align: center;
+    margin: 10vh auto 0;
+    display: flex !important;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .mySkilss h3 {
+    width: 100%;
+    font-size: 24px !important;
+  }
+  .mySkilss p {
+    font-size: 18px !important;
+    direction: ltr;
+  }
+}
+.mySkilss:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -50px;
+  height: 1px;
+  background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+  bottom: -6.5vh;
+  height: 5px;
 }
 
 ::-webkit-scrollbar {
